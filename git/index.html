@@ -103,6 +103,14 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-level="2"><a href="#remove-files-from-git-repo-that-you-have-already-deleted-from-the-file-system" class="nav-link">Remove files from Git repo that you have already deleted from the file system</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#ignore-some-files" class="nav-link">Ignore some files</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -117,7 +125,7 @@ http://academany.fabcloud.io/fabacademy/2020/recitations/version-control/</p>
 <p>In this recitation we are going to explain what version control is. Our focus is going to be Git, GitLab and plain HTML.</p>
 <h2 id="useful-commands">Useful commands</h2>
 <p>Pull repo
-(git pull include both git fetch and git merge in one handy short cut.) </p>
+(git pull include both git fetch and git merge in one handy short cut.)</p>
 <blockquote>
 <p>git pull</p>
 </blockquote>
@@ -136,7 +144,16 @@ http://academany.fabcloud.io/fabacademy/2020/recitations/version-control/</p>
 <p>Push to remote server</p>
 <blockquote>
 <p>git push</p>
-</blockquote></div>
+</blockquote>
+<h2 id="remove-files-from-git-repo-that-you-have-already-deleted-from-the-file-system">Remove files from Git repo that you have already deleted from the file system</h2>
+<p>https://stackoverflow.com/questions/492558/removing-multiple-files-from-a-git-repo-that-have-already-been-deleted-from-disk</p>
+<p>'git status' to see a list of delted files</p>
+<p>'git add -u' to add the deleted files to the staging area, then commit them</p>
+<p>'git commit -m "Deleted files manually"'</p>
+<h2 id="ignore-some-files">Ignore some files</h2>
+<p>e.g. a generated 'site' folder</p>
+<p>Add the directory to the .gitignore file:</p>
+<p>'site/'</p></div>
             </div>
         </div>
 
