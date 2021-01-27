@@ -86,3 +86,11 @@ Or create an mkdocs site in the current directory:
 > mkdocs serve
 
 Cmd-period to stop the server and issue new commands
+
+# Publish HTML to Github
+
+https://squidfunk.github.io/mkdocs-material/publishing-your-site/
+
+If you prefer to deploy your project documentation manually, you can just invoke the following command from the directory containing the mkdocs.yml file:
+
+'mkdocs gh-deploy --force'
