@@ -62,7 +62,7 @@ Add the directory to the .gitignore file. e.g. `site/`
 
 
 
-# SSH Key
+## SSH Key
 
 From https://fabacademy.org/2019/docs/FabAcademy-Tutorials/week01_principles_practices_project_management/git_simple.html
 
@@ -103,10 +103,17 @@ I think its just a comment and can be left out
 
 
 
-## Adding your SSH public key to GitLab
+### Adding your SSH public key to GitLab
 https://docs.gitlab.com/ee/gitlab-basics/create-your-ssh-keys.html
 
 
-## Store passphrase in Keychain so you don't have to enter it each time
+### Store passphrase in Keychain so you don't have to enter it each time
 
 `sudo pico ~/.ssh/config`
+
+Add these lines:
+
+```
+Host *
+    UseKeychain yes
+```
