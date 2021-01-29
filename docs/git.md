@@ -68,7 +68,8 @@ From https://fabacademy.org/2019/docs/FabAcademy-Tutorials/week01_principles_pra
 
 1. Check if you have an SSH KEY already cat ~/.ssh/id_rsa.pub (If you see a long string starting with ssh-rsa, you can skip the ssh-keygen step) 
 
-```andrew@andrew Git % cat ~/.ssh/id_rsa.pub
+```
+andrew@andrew Git % cat ~/.ssh/id_rsa.pub
 cat: /Users/andrew/.ssh/id_rsa.pub: No such file or directory
 ```
 
