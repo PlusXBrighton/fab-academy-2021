@@ -59,3 +59,54 @@ then commit them:
 e.g. a generated 'site' folder
 
 Add the directory to the .gitignore file. e.g. `site/`
+
+
+
+# SSH Key
+
+From https://fabacademy.org/2019/docs/FabAcademy-Tutorials/week01_principles_practices_project_management/git_simple.html
+
+1. Check if you have an SSH KEY already cat ~/.ssh/id_rsa.pub (If you see a long string starting with ssh-rsa, you can skip the ssh-keygen step) 
+
+```andrew@andrew Git % cat ~/.ssh/id_rsa.pub
+cat: /Users/andrew/.ssh/id_rsa.pub: No such file or directory
+```
+
+
+2. Generate your SSH key ssh-keygen -t rsa -C "$your_email"
+
+```
+ssh-keygen -t rsa -C "$andrew.sleigh@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/andrew/.ssh/id_rsa):
+```
+
+
+Press enter to accept default name
+
+Enter passphrase (empty for no passphrase):
+
+
+3. Now let's see your keygen 
+
+`cat ~/.ssh/id_rsa.pub `
+
+I’m not sure why it has that fragment of my email at the end….
+https://askubuntu.com/questions/801997/purpose-of-email-at-the-end-of-ssh-public-key
+I think its just a comment and can be left out
+
+
+
+4. Copy your key
+
+`pbcopy < ~/.ssh/id_rsa.pub`
+
+
+
+## Adding your SSH public key to GitLab
+https://docs.gitlab.com/ee/gitlab-basics/create-your-ssh-keys.html
+
+
+## Store passphrase in Keychain so you don't have to enter it each time
+
+`sudo pico ~/.ssh/config`
